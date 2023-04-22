@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-/* Test betty style doc for function main goes there */
-int main(void)/* betty style doc for function main goes there */
+/* Ce programme génère un nombre aléatoire et affiche s'il est positif, nul ou négatif */
+int main(void)/* Ce programme génère un nombre aléatoire et affiche s'il est positif, nul ou négatif */
 {
 	int n;
 

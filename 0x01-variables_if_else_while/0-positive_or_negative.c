@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-/* betty style doc for function main goes there */
+/* Test betty style doc for function main goes there */
 int main(void)
 {
 	int n;

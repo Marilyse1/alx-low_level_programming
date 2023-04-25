@@ -1,7 +1,7 @@
 #include "main.h"
 
 /* Définition de la fonction print_alphabet */
-void print_alphabet(void)
+void print_alphabet(void)/* main description */
 {
 	/* main description */
 	char c;

@@ -1,19 +1,13 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * 
- * Description: 'the program's description'
- * @parameter: describe the parameter
- * 
- * Return: Always 0 (Success)
+ * print_alphabet - Affiche l'alphabet en minuscules suivi d'un saut de ligne
  */
 void print_alphabet(void)
 {
-	char c;
+    char c;
+    for (c = 'a'; c <= 'z'; c++)
+        _putchar(c);
 
-	for (c = 'a'; c <= 'z'; c++)
-		_putchar(c);
-
-	_putchar('\n');
+    _putchar('\n');
 }

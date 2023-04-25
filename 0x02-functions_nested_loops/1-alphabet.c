@@ -1,12 +1,13 @@
 #include "main.h"
 
 /* Définition de la fonction print_alphabet */
-void print_alphabet(void)
-{
-	/* Affiche l'alphabet en minuscules suivi d'un saut de ligne */
+void print_alphabet(void)/* main description */
+{/* Définition de la fonction print_alphabet */
+	/* main description */
 	char c;
-	for (c = 'a'; c <= 'z'; c++) {
+
+	for (c = 'a'; c <= 'z'; c++)
 		_putchar(c);
-	}
+
 	_putchar('\n');
 }

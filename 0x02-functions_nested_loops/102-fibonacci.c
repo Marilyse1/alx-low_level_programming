@@ -9,7 +9,8 @@
 *
 * Return: 0 (Success)
 */
-int main(void) {
+int main(void)
+{
 unsigned long int n = 50;
 unsigned long int a = 1, b = 2, c, i;
 

@@ -10,7 +10,7 @@
 * Return: 0 (Success)
 */
 int main(void) {
-int n = 50; /* Number of Fibonacci numbers to generate */
+unsigned long int n = 50; /* Number of Fibonacci numbers to generate */
 unsigned long int a = 1, b = 2, c, i; /* Starting values of Fibonacci sequence */
 
 /* Print the first two Fibonacci numbers*/

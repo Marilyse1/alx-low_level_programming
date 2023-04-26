@@ -11,9 +11,9 @@
 */
 int main(void)
 {
-unsigned long long int a = 1; /* First Fibonacci number */
-unsigned long long int b = 2; /* Second Fibonacci number */
-unsigned long long int c;     /* Current Fibonacci number */
+unsigned long int a = 1; /* First Fibonacci number */
+unsigned long int b = 2; /* Second Fibonacci number */
+unsigned long int c;     /* Current Fibonacci number */
 int i;     /* Loop counter */
 
 printf("%d, %d, ", a, b); /* Print the first two Fibonacci numbers */

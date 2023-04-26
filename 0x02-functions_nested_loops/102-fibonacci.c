@@ -5,24 +5,24 @@
 *
 * Description: Prints the first 50 Fibonacci numbers,
 * separated by commas and
-*              followed by a space, and ending with a new line.
+* followed by a space, and ending with a new line.
 *
 * Return: 0 (Success)
 */
 int main(void) {
-unsigned long int n = 50; /* Number of Fibonacci numbers to generate */
-unsigned long int a = 1, b = 2, c, i; /* Starting values of Fibonacci sequence */
+unsigned long int n = 50;
+unsigned long int a = 1, b = 2, c, i;
 
-/* Print the first two Fibonacci numbers*/
 printf("%lu, %lu, ", a, b);
 
-/* Generate and print the rest of the Fibonacci numbers */
-for (i = 3; i <= n; i++) {
+/* Generate, print the rest of the Fibonacci numbers */
+for (i = 3; i <= n; i++)
+{
 c = a + b;
 printf("%lu", c);
-if (i < n) {
+if (i < n)
 printf(", ");
-}
+
 a = b;
 b = c;
 }

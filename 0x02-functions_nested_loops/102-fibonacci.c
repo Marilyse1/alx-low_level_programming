@@ -8,23 +8,25 @@
 *
 * Return: 0 (Success)
 */
-int main(void)
-{
-int num1 = 1;   /* First Fibonacci number */
-int num2 = 2;   /* Second Fibonacci number */
-int temp, i;       /* Temporary variable to store the sum of num1 and num2 */
+int main(void) {
+int n = 50; // Number of Fibonacci numbers to generate
+unsigned long long int a = 1, b = 2, c; // Starting values of Fibonacci sequence
 
-/* Print the first two Fibonacci numbers */
-printf("%d, %d", num1, num2);
+// Print the first two Fibonacci numbers
+printf("%llu, %llu, ", a, b);
 
-/* Print the remaining 48 Fibonacci numbers */
-for (i = 3; i <= 50; i++) {
-temp = num1 + num2;        /* Calculate the sum of num1 and num2 */
-printf(", %d", temp);     /* Print the sum separated by a comma and a space */
-num1 = num2;              /* Update num1 with the value of num2 */
-num2 = temp;             /* Update num2 with the value of the sum */
+// Generate and print the rest of the Fibonacci numbers
+for (int i = 3; i <= n; i++) {
+c = a + b;
+printf("%llu", c);
+if (i < n) {
+printf(", ");
 }
-printf("\n"); /* Print a new line after the numbers */
+a = b;
+b = c;
+}
 
-return (0);
+printf("\n");
+
+return 0;
 }

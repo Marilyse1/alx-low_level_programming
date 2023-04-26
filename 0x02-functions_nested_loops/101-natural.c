@@ -17,8 +17,8 @@ int i, sum = 0; /* Variable to store the sum */
 for (i = 0; i < 1024; i++)
 {
 /* Check if the current number is a multiple of 3 or 5 */
-if (i % 3 == 0 || i % 5 == 0) 
-sum += i; /* Add the current number to the sum */ 
+if (i % 3 == 0 || i % 5 == 0)
+sum += i;/* Add the current number to the sum */ 
 }
 
 /* Print the sum */

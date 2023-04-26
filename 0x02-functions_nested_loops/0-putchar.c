@@ -5,7 +5,7 @@
 *
 * Description : Cette fonction est le point d'entrée
 * du programme. Elle imprime
-*               "_putchar" suivi d'une nouvelle 
+*"_putchar" suivi d'une nouvelle
 *ligne en utilisant la fonction
 *               "_putchar" définie dans un autre
 *fichier source. Le programme

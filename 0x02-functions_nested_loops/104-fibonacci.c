@@ -16,12 +16,12 @@ unsigned long int b = 2; /* Second Fibonacci number */
 unsigned long int c;     /* Current Fibonacci number */
 int i;     /* Loop counter */
 
-printf("%d, %d, ", a, b); /* Print the first two Fibonacci numbers */
+printf("%lu, %lu, ", a, b); /* Print the first two Fibonacci numbers */
 
 for (i = 3; i <= 98; i++)
 {
 c = a + b;             /* Calculate the next Fibonacci number */
-printf("%d", c);      /* Print the current Fibonacci number */
+printf("%lu", c);      /* Print the current Fibonacci number */
 if (i < 98)           /* If not the last number, print comma and space */
 printf(", ");
 a = b;                /* Update a to be the current b */

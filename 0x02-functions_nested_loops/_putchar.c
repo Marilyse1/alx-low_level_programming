@@ -1,6 +1,9 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include "main.h"
+#include <unistd.h>
 
-int _putchar(char c);
-
-#endif /* MAIN_H */
+char _putchar(char c)
+{
+    /* Votre code pour imprimer un caractère à l'aide de la sortie standard */
+    /* Par exemple, sur un système UNIX-like, vous pouvez utiliser write() */
+    return write(1, &c, 1);
+}

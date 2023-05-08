@@ -8,20 +8,30 @@
  * Return: pointer to the beginning of the located substring,
  *         or NULL if the substring is not found.
  */
+
 char *_strstr(char *haystack, char *needle)
 {
-int i, j, k;
+    char *haystack_ptr;
+    char *needle_ptr;
 
-for (i = 0; haystack[i] != '\0'; i++)
-{
-for (j = 0, k = i; needle[j] != '\0'; j++, k++)
-{
-if (haystack[k] != needle[j])
-break;
-}
-if (needle[j] == '\0')
-return (haystack + i);
-}
+    while (*haystack != '\0')
+    {
+        haystack_ptr = haystack;
+        needle_ptr = needle;
 
-return (NULL);
+        while (*haystack_ptr == *needle_ptr && *needle_ptr != '\0' && *haystack_ptr != '\0')
+        {
+            haystack_ptr++;
+            needle_ptr++;
+        }
+
+        if (*needle_ptr == '\0')
+        {
+            return (haystack);
+        }
+
+        haystack++;
+    }
+
+    return (NULL);
 }

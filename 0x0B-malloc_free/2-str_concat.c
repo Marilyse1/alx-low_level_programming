@@ -8,7 +8,8 @@
 * @s1: the first string
 * @s2: the second string
 *
-* Return: a pointer to the concatenated string, or NULL on failure
+* Return: a pointer to the concatenated
+* string, or NULL on failure
 */
 char *str_concat(char *s1, char *s2)
 {
@@ -25,7 +26,7 @@ s2_len = strlen(s2);
 
 result = malloc(s1_len + s2_len + 1);
 if (result == NULL)
-		return (NULL);
+return (NULL);
 
 memcpy(result, s1, s1_len);
 memcpy(result + s1_len, s2, s2_len + 1);

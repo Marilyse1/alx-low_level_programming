@@ -43,5 +43,5 @@ concat[i++] = s2[j];
 
 concat[i] = '\0';
 
-return (concatù;
+return (concat);
 }

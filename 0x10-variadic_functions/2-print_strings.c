@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdarg.h>
 
 /**
@@ -14,35 +15,26 @@
 */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-/* Declare an argument list */
-va_list args;
+va_list args;  /* Declare an argument list */
 unsigned int i;
 char *str;
 
-/* Initialize the argument list */
-va_start(args, n);
+va_start(args, n);  /* Initialize the argument list */
 
 for (i = 0; i < n; i++)
 {
-/* Get the next argument of type char */
-str = va_arg(args, char *);
+str = va_arg(args, char *);  /* Get the next argument of type char */
 
 if (str != NULL)
-/* Print the string */
-printf("%s", str);
+printf("%s", str);  /* Print the string */
 else
-/* Print (nil) if the string is NULL */
-printf("(nil)");
+printf("(nil)");  /* Print (nil) if the string is NULL */
 
 if (separator != NULL && i < n - 1)
-/* Print the separator if it is not NULL and it's not the last string */
-printf("%s", separator);
-
+printf("%s", separator);  // Print the separator if it is not NULL and it's not the last string
 }
 
-/* Print a new line at the end of the function */
-printf("\n");
+printf("\n");  /* Print a new line at the end of the function */
 
-/* Clean up the argument list */
-va_end(args);
+va_end(args);  /* Clean up the argument list */
 }

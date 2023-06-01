@@ -24,7 +24,7 @@ free(new_node);
 return (NULL);
 }
 
-new_node->len = _strlen(new_node->str);
+new_node->len = strlen(new_node->str);
 new_node->next = NULL;
 
 if (*head == NULL)

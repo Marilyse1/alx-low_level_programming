@@ -1,16 +1,16 @@
 section .data
-    format db "Hello, Holberton", 0xA, 0
+format db "Hello, Holberton", 0xA, 0
 
 section .text
-    global main
-    extern printf
+global main
+extern printf
 
 main:
-    ; Push the format string onto the stack
-    mov rdi, format
-    ; Call printf function
-    call printf
+; Push the format string onto the stack
+mov rdi, format
+; Call printf function
+call printf
 
-    ; Exit the program
-    mov eax, 0
-    ret
+; Exit the program
+mov eax, 0
+ret

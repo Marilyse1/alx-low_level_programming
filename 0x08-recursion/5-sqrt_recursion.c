@@ -39,9 +39,9 @@ int sqrt_helper(int n, int x)
 if (x * x == n)
 return (x);
 
-/* 
+/*
 * If x*x is greater than n, it means
-* there's no natural square root 
+* there's no natural square root
 */
 if (x * x > n)
 return (-1);

@@ -11,5 +11,7 @@ int _strlen_recursion(char *s)
 if (*s == '\0')
 return (0);
 
+/* Appel récursif avec le caractère suivant et retourne 1 plus la longueur de la sous-chaîne */
+
 return (1 + _strlen_recursion(s + 1));
 }

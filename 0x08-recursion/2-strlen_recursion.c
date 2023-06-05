@@ -1,13 +1,14 @@
 #include <stdio.h>
 
 /**
-* _strlen_recursion - Calcule la longueur d'une chaîne de caractères
-* @s: Pointeur vers la chaîne de caractères
+* _strlen_recursion - Calculates the length of a string recursively
+* @s: Pointer to the string
 *
-* Retour: La longueur de la chaîne de caractères
+* Return: The length of the string (excluding the terminating null byte)
 */
 int _strlen_recursion(char *s)
 {
+/* Base case: if we reach the end of the string, return 0 */
 if (*s == '\0')
 return (0);
 

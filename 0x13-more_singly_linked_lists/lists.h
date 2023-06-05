@@ -4,8 +4,8 @@
 /* Structure for a singly-linked list of integers */
 typedef struct listint_s
 {
-int n;                 /* Data of the node */
-struct listint_s *next;/* Pointer to the next node */
+int n;
+struct listint_s *next;
 } listint_t;
 
 /* Function prototypes */

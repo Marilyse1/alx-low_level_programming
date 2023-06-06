@@ -1,49 +1,31 @@
 #include <stdlib.h>
 #include <string.h>
 
-/**
-* count_words - Counts the number of words in a string
-* @str: The input string
-*
-* Return: The number of words
-*/
-int count_words(char *str)
-{
-int count = 0;
-int i, len = strlen(str);
-
-for (i = 0; i < len; i++)
-{
-if (str[i] != ' ')
-{
-count++;
-while (str[i] != ' ' && i < len)
-i++;
-}
-}
-
-return (count);
-}
+int count_words(char *str);
 
 /**
-* strtow - Splits a string into words
-* @str: The input string
+* strtow - Splits a string into words.
+* @str: The string to be split.
 *
-* Return: Pointer to an array of strings (words), or NULL if it fails
+* Return: Pointer to an array of strings (words), or NULL if str is NULL or empty,
+*         or if the function fails.
 */
 char **strtow(char *str)
 {
 if (str == NULL || *str == '\0')
 return (NULL);
 
-int i, j, k, len = strlen(str);
+int len = strlen(str);
 int word_count = count_words(str);
 
 char **words = malloc((word_count + 1) * sizeof(char *));
 if (words == NULL)
 return (NULL);
 
-for (i = 0, k = 0; i < len; i++)
+int i, j, k;
+k = 0;
+
+for (i = 0; i < len; i++)
 {
 if (str[i] != ' ')
 {
@@ -69,4 +51,31 @@ k++;
 
 words[k] = NULL;
 return (words);
+}
+
+/**
+* count_words - Counts the number of words in a string.
+* @str: The string to be counted.
+*
+* Return: The number of words in str.
+*/
+int count_words(char *str)
+{
+int count = 0;
+int i = 0;
+int len = strlen(str);
+
+while (i < len)
+{
+while (str[i] == ' ' && i < len)
+i++;
+if (i < len && str[i] != ' ')
+{
+count++;
+while (str[i] != ' ' && i < len)
+i++;
+}
+}
+
+return (count);
 }

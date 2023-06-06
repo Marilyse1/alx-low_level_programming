@@ -12,17 +12,18 @@ int count_words(char *str);
 */
 char **strtow(char *str)
 {
+int len, word_count, i, j, k;
+
 if (str == NULL || *str == '\0')
 return (NULL);
 
-int len = strlen(str);
-int word_count = count_words(str);
+len = strlen(str);
+word_count = count_words(str);
 
 char **words = malloc((word_count + 1) * sizeof(char *));
 if (words == NULL)
 return (NULL);
 
-int i, j, k;
 k = 0;
 
 for (i = 0; i < len; i++)

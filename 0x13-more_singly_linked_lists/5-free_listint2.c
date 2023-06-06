@@ -1,6 +1,6 @@
 #include "lists.h"
 #include <stddef.h>
-
+#include <stdlib.h>
 
 /**
 * free_listint2 - Libère une liste chainée

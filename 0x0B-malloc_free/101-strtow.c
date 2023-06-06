@@ -7,12 +7,13 @@ int count_words(char *str);
 * strtow - Splits a string into words.
 * @str: The string to be split.
 *
-* Return: Pointer to an array of strings (words), or NULL if str is NULL or empty,
+* Return: Pointer to an array of strings (words),
+* or NULL if str is NULL or empty,
 *         or if the function fails.
 */
 char **strtow(char *str)
 {
-int len, word_count, i, j, k;
+int len, word_count, i, j, k=0;
 char **words;
 
 if (str == NULL || *str == '\0')
@@ -24,8 +25,6 @@ word_count = count_words(str);
 words = malloc((word_count + 1) * sizeof(char *));
 if (words == NULL)
 return (NULL);
-
-k = 0;
 
 for (i = 0; i < len; i++)
 {

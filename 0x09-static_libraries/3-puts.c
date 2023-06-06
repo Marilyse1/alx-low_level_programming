@@ -1,5 +1,5 @@
 #include "main.h"
 
-int _isdigit(int c)
+void _puts(char *s)
 {
 }

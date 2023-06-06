@@ -13,7 +13,7 @@ int count_words(char *str);
 */
 char **strtow(char *str)
 {
-int len, word_count, i, j, k=0;
+int len, word_count, i, j, k = 0;
 char **words;
 
 if (str == NULL || *str == '\0')
@@ -80,3 +80,4 @@ i++;
 
 return (count);
 }
+

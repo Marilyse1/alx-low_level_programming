@@ -21,8 +21,10 @@ int i, j, k;
 for (i = 0; i < ac; i++)
 {
 for (j = 0; av[i][j] != '\0'; j++)
+{
 total_length++;
-total_length++; /* Count the '\n' character */
+}
+total_length++;
 }
 
 /* Allocate memory for the final string */

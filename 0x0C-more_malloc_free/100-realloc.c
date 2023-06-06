@@ -2,12 +2,16 @@
 #include <string.h>
 
 /**
-* _realloc - Réalloue un bloc mémoire en utilisant malloc et free
+* _realloc - Réalloue un bloc mémoire
+* en utilisant malloc et free
 * @ptr: Pointeur vers le bloc mémoire précédemment alloué
-* @old_size: Taille en octets de l'espace mémoire alloué pour ptr
-* @new_size: Nouvelle taille en octets du nouveau bloc mémoire
+* @old_size: Taille en octets de
+* l'espace mémoire alloué pour ptr
+* @new_size: Nouvelle taille en
+* octets du nouveau bloc mémoire
 *
-* Return: Pointeur vers le nouveau bloc mémoire alloué, ou NULL en cas d'échec
+* Return: Pointeur vers le nouveau bloc mémoire alloué,
+* ou NULL en cas d'échec
 */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {

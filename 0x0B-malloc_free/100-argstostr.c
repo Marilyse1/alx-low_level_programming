@@ -11,11 +11,12 @@
 */
 char *argstostr(int ac, char **av)
 {
-if (ac == 0 || av == NULL)
-return (NULL);
-
 int total_length = 0;
 int i, j, k;
+char *str;
+
+if (ac == 0 || av == NULL)
+return (NULL);
 
 /* Calculate the total length needed for the final string */
 for (i = 0; i < ac; i++)
@@ -28,7 +29,7 @@ total_length++;
 }
 
 /* Allocate memory for the final string */
-char *str = (char *)malloc((total_length + 1) * sizeof(char));
+str = (char *)malloc((total_length + 1) * sizeof(char));
 if (str == NULL)
 return (NULL);
 

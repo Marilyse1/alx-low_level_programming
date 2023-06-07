@@ -1,14 +1,19 @@
 section .data
-format db "Hello, Holberton", 0xA, 0
+message db 'Hello, Holberton', 0
+format db '%s', 0
 
 section .text
-global main
 extern printf
 
+global main
+
 main:
-; Push the format string onto the stack
+; Prepare the arguments for printf
 mov rdi, format
-; Call printf function
+mov rsi, message
+
+; Call printf
+mov eax, 0
 call printf
 
 ; Exit the program

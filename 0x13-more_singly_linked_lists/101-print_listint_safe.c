@@ -1,5 +1,9 @@
 #include "lists.h"
 #include <stddef.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+
 
 /**
 * print_listint_safe - Imprime une

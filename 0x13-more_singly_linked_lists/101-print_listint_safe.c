@@ -3,8 +3,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-
-
 /**
 * print_listint_safe - Imprime une
 * liste chaînée de manière sécurisée
@@ -23,7 +21,6 @@ while (current != NULL)
 printf("[%p] %d\n", (void *)current, current->n);
 count++;
 
-/* Vérifier si le nœud courant pointe vers un nœud précédent */
 if (current->next >= current)
 {
 loop_node = current->next;
@@ -35,7 +32,6 @@ current = current->next;
 }
 
 if (loop_node != NULL)
-/* La liste contient une boucle, arrêter le programme */
 exit(98);
 
 return (count);
